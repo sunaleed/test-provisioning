@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "service_deployment" {
-  bucket = "service-deployment"
+  bucket = "suna-service-deployment"
 }
 
 resource "aws_s3_bucket_accelerate_configuration" "service_deploymentaccelerate_configuration" {
