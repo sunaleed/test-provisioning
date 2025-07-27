@@ -22,12 +22,12 @@ workflows:
       steps:
         - init:
             extra_args: [
-              '-backend-config="role_arn=arn:aws:iam::066346343248:role/atlantis-suna-id-admin"',
+              '-backend-config="role_arn=arn:aws:iam::079900528673:role/atlantis-suna-id-admin"',
               '-upgrade=false'
             ]
         - plan:
             extra_args: [
-              "-var 'assume_role_arn=arn:aws:iam::066346343248:role/atlantis-suna-id-admin'"
+              "-var 'assume_role_arn=arn:aws:iam::079900528673:role/atlantis-suna-id-admin'"
             ]
     apply:
       steps:
